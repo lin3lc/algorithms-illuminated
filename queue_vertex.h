@@ -28,6 +28,13 @@ struct queue* create_queue()
     return temp;
 }
 
+struct queue* destroy_queue(struct queue* q)
+{
+    if(q->front == NULL){
+        free(q);
+    }
+}
+
 void en_queue(struct queue *q, struct vertex *data)
 {
     struct q_node *temp = new_node(data);

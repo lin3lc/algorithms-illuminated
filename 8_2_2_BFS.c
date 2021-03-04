@@ -101,6 +101,8 @@ int main(void){
     {
         free(v[i]);
     }
+
+    destroy_queue(q);
     return 0;
 }
 
