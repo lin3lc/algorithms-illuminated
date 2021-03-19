@@ -1,3 +1,6 @@
+#ifndef QUEUE_VERTEX_H
+#define QUEUE_VERTEX_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "graph_adjacency_list.h"
@@ -71,3 +74,5 @@ struct vertex* de_queue(struct queue *q)
 
     return data;
 }
+
+#endif
